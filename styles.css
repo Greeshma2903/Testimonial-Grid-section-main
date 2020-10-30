@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+/* ---------- container -----------*/
+.container{
+    margin: 10% ;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.container div{
+    border-radius: 5px;
+    box-shadow: 0 0 6px hsl(0, 0%, 81%);
+    margin: .8rem;
+    padding: 1.8rem;
+}
+
+
+/* --------- review-cards---------- */
+.Daniel-review, .Jonathan-review, .Patrick-review{
+    color: #fff;
+}
+
+.Daniel-review{
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/ 5;
+
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 79% top;
+    background-size: 25%;
+}
+
+.Jonathan-review{
+background-color: hsl(217, 19%, 35%);
+grid-column: 5 / 6
+}
+
+.Jeanette-review{
+background-color: #fff;
+grid-column: 1 / 2;
+}
+
+.Patrick-review{
+background-color: hsl(219, 29%, 14%);
+grid-column: 2 / 6;
+}
+
+.Kira-reivew{
+background-color: hsl(0, 0%, 100%);
+grid-area: 1 / 6 / 3 / 7;
+}
+
+/* --------- reviewer-image ------ */
+.container img{
+    border: solid 3px;
+    border-radius: 90%;
+    float: left;
+    margin-right: 1rem;
+    width:2.5rem;
+    height: 2.5rem;
+}
+
+.Daniel-review img{
+    border-color: hsl(217, 19%, 35%);
+} 
+
+.Patrick-review img{
+    border-color: hsl(263, 55%, 52%);
+}
+
+.Kira-reivew img, .Jeanette-review img, .Jonathan-review img{
+    border-color: hsl(210, 46%, 95%);
+}
+
+/* -------- reviewer-info -------- */
+.name{
+   font-size: .9rem;
+   margin-top: 2px;
+}
+
+/* verification */
+.verification{
+    opacity: 50%;
+    display: block;
+    font-size: 13px;
+}
+
+/* -------- review-content ------ */
+.brief-review{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.quotation{
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 70%;
+}
+
+
+/* ________________________MEDIA QUERIES_________________________ */
+@media(max-width: 765px){
+
+    .container{
+        display: block;
+        margin: 5%;
+    }
+
+    .container div{
+        padding: 3rem;
+    }
+
+}
